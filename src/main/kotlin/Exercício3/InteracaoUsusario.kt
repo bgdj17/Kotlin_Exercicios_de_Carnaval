@@ -1,4 +1,4 @@
-package Exerccício3
+package Exercício3
 
 fun entradasUsusario() {
 

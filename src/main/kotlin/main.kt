@@ -1,36 +1,23 @@
-import Exerccício3.Funcionario
-import Exerccício3.entradasUsusario
+import Exercício3.entradasUsusario
+import Exercício1.Pessoa
+import Exercício2.Contato
 import Exercício2.iterarUsuario
 
 fun main() {
 
-    /*var alunos = Aluno(nome="Bruna",turma="201A", ra="123")
-    var aluno1 = Aluno(nome="Bruna",turma="201A", ra="1234")
-    var aluno2 = Aluno(nome = "Isis", turma = "101B", ra="333")
-    println("${aluno1.nome}  ${aluno1.turma}")
-    aluno1.olaAluno()
-    aluno2.olaAluno()
-
+    /*
+    Exercício 1 ->
     var pessoa1 = Pessoa("Bruna", "17/01/1986", 1.76)
     println(pessoa1.getNome())
     println(pessoa1.getDatadeNascimento())
     println(pessoa1.getAltura())
     println(pessoa1.getDados())
 
-    var contato1 = Contato("Bruna", "1111-2222")
-    var contato2 = Contato("Bru", "1111-2222")
-    var contatos = mutableListOf<Contato>(contato1, contato2)
+    Exercício 2 ->
+    iterarUsuario()
 
-    var guardarAgenda = Agenda(contato1)
-
-
-    var teste = guardarAgenda.salvarContato()
-
-    println(teste)
-
-    var acharContato = contatos.filter{it.contatoNome == "Bruna"}
-*/
-    //iterarUsuario()
+    Exercício3 ->
+     */
     entradasUsusario()
 
 

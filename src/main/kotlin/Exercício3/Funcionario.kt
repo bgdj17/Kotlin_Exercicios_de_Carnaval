@@ -1,6 +1,4 @@
-package Exerccício3
-
-import kotlin.math.absoluteValue
+package Exercício3
 
 open class Funcionario(
     private var idFuncionario: Int,
