@@ -1,6 +1,5 @@
-import Exercício2.Agenda
-import Exercício2.Contato
-import Exercício2.iterarUsuario
+import Exerccício3.Funcionario
+import Exerccício3.entradasUsusario
 
 fun main() {
 
@@ -30,7 +29,8 @@ fun main() {
 
     var acharContato = contatos.filter{it.contatoNome == "Bruna"}
 */
-    iterarUsuario()
+    //iterarUsuario()
+    entradasUsusario()
 
 
 }
