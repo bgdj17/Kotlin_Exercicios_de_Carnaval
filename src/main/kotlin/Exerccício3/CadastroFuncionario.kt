@@ -6,11 +6,11 @@ class CadastroFuncionario(var funcionario: Funcionario) {
 
     fun salvarFuncionario(): String {
         funcionarios.add(funcionario)
-        return "Funcionário ${funcionario.nomeFuncionario} foi salvo com sucesso!"
+        return "Funcionário ${funcionario.getNome()} foi salvo com sucesso!"
     }
-    fun buscarFuncionario(): Double {
-        var busca = funcionarios.filter { it.idFuncionario == funcionario.idFuncionario }
-        return busca[0].salarioAtualFuncionario
+    fun buscarFuncionario() {
+        var busca = funcionarios.filter { it.getId() == funcionario.getId() }
+        busca.forEach { println("Nome ${it.getNome()}, Salário ${it.getSalario()}.")}
     }
 }
 

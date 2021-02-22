@@ -17,12 +17,9 @@ class Agenda(var nome: String = "", var tel: String = "") {
             return "Agenda está com sua capacidade máxima."
         }
     }
-
     fun getContatos() {
         if (agenda.isNotEmpty()) {
-            for (contato in agenda) {
-                println("Nome: ${contato.contatoNome}, telefone: ${contato.contatoTelefone}")
-            }
+          agenda.forEach{ println("Nome: ${it.contatoNome }, telefone: ${it.contatoTelefone}")}
         } else println("Agenda está vazia!")
     }
 
@@ -39,13 +36,11 @@ class Agenda(var nome: String = "", var tel: String = "") {
         return mensagem
     }
 
-    fun getContato(): String {
+    fun getContato(){
         var buscaContatoCad = agenda.filter { it.contatoNome == this.nome }
-
         if (buscaContatoCad.isNotEmpty()) {
-            return "Nome: ${buscaContatoCad[0].contatoNome}, telefone: ${buscaContatoCad[0].contatoTelefone}"
-        } else {
-            return "Contato ${nome} não foi localizado!"
+            buscaContatoCad.forEach{println("Nome: ${it.contatoNome}, tel: ${it.contatoTelefone}")}
+        } else { println("Contato ${nome} não foi localizado!")
         }
     }
 }

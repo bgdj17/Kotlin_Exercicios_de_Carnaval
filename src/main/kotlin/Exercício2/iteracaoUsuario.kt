@@ -41,13 +41,14 @@ fun iterarUsuario() {
                     println(agenda.deletarContato())
                 }
                 if (acao == "3") {
-                    println(agenda.getContato())
-                }
-                if (acao == "4") {
-                    agenda.getContatos()
+                    agenda.getContato()
                 }
             }
+            if (acao == "4") {
+                agenda.getContatos()
+            }
         }
+
         println("Para sair digite E(Exit)")
         var opcao = readLine()
 

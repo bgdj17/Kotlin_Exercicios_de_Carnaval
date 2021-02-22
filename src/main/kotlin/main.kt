@@ -1,5 +1,6 @@
 import Exerccício3.Funcionario
 import Exerccício3.entradasUsusario
+import Exercício2.iterarUsuario
 
 fun main() {
 
