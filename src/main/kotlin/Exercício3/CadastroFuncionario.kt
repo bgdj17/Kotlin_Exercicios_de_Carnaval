@@ -12,5 +12,7 @@ class CadastroFuncionario(var funcionario: Funcionario) {
         var busca = funcionarios.filter { it.getId() == funcionario.getId() }
         busca.forEach { println("Nome ${it.getNome()}, Salário ${it.getSalario()}.")}
     }
+
+
 }
 

@@ -21,16 +21,15 @@ open class Funcionario(
     open fun getNome(): String {
         return nomeFuncionario
     }
-
     open fun getCpf(): String {
         return nomeFuncionario
     }
-
     open fun getId(): String {
         return nomeFuncionario
     }
-
-
+    fun exibirInformacoes(){
+        println("ID: ${idFuncionario}, Nome: ${nomeFuncionario}, CPF: ${cpfFuncionario}")
+    }
 }
 
 class Gestor(id: Int, nome: String, cpf: Int, salarioAtual: Double) : Funcionario(id, nome,
